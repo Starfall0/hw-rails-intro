@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 ruby '2.6.6'
 
-#i add this
+# i add this
 gem 'execjs'
 gem 'therubyracer'
 
@@ -16,7 +18,6 @@ gem 'uglifier', '>= 1.3.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -24,14 +25,14 @@ gem 'themoviedb'
 
 # Window support
 gem 'tzinfo'
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw]
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
-  gem 'rspec-rails'
   gem 'guard-rspec'
+  gem 'rspec-rails'
 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.3.6'
